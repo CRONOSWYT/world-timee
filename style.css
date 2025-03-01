@@ -82,3 +82,24 @@ input {
 .key-button:hover {
     background-color: #ff4500;
 }
+
+.social-icons {
+    position: fixed;
+    /*bottom: 20px;  /* Distancia desde la parte inferior */
+    right: 20px;   /* Distancia desde la derecha */
+    display: flex;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
