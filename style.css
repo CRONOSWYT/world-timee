@@ -89,7 +89,7 @@ input {
     right: 20px;   /* Distancia desde la derecha */
     display: flex;
     gap: 10px;
-    background: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente */
+    background: rgba(0, 0, 0, 0);  /* Fondo semi-transparente */
     padding: 10px;
     border-radius: 10px;
 }
