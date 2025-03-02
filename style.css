@@ -1,11 +1,7 @@
 
 body {
-    background-image: url('fondo3.JPG'); /* Asegúrate de que la ruta sea correcta */
-    background-size: 100% 100%; /* Ajusta la imagen al tamaño completo de la ventana */
-    background-position: top center; /* Centra la imagen en la parte superior */
-    background-repeat: no-repeat; /* Evita repeticiones */
-    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
-    
+
+
     color: #c9d1d9;
     font-family: Arial, sans-serif;
     text-align: center;
