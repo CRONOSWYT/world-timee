@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <link rel="icon" type="image" href="OIG3.guBKCyf0YPEMDVO-transformed.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORLD TIME</title>
    <link rel="stylesheet" href="style.css">
+   <div class="social-icons">
+    <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbTZmZmdZY3p6WG4tOERSSUpSeXA1c2ZLZEhhd3xBQ3Jtc0tuMnBlN05odURiMUcxN2hRLUpwZlRUdVgzMFVQYXdFbEhyaFlQV0NlSUFFbEpqMmxLR0dBa1h3UnVOaTI2YzdDSHZLYzJDdWhYNkdLR0VyamdsZU1pSGNzeEJXS3d2dWNKVGVvWXJnY2Y0T2xqNWxLaw&q=https%3A%2F%2Fdiscord.gg%2FAkGsvJhnJF" target="_blank">
+        <img src="discord.png" alt="Discord">
+    </a>
+    <a href="https://www.youtube.com/@tu-canal" target="_blank">
+        <img src="youtube.png" alt="YouTube">
+    </a>
+</div>
+<h1>WORLD TIME </h1>
+<h5>V0.0002</h5>
 </head>
 <body>
-    <div class="social-icons">
-        <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbTZmZmdZY3p6WG4tOERSSUpSeXA1c2ZLZEhhd3xBQ3Jtc0tuMnBlN05odURiMUcxN2hRLUpwZlRUdVgzMFVQYXdFbEhyaFlQV0NlSUFFbEpqMmxLR0dBa1h3UnVOaTI2YzdDSHZLYzJDdWhYNkdLR0VyamdsZU1pSGNzeEJXS3d2dWNKVGVvWXJnY2Y0T2xqNWxLaw&q=https%3A%2F%2Fdiscord.gg%2FAkGsvJhnJF" target="_blank">
-            <img src="discord.png" alt="Discord">
-        </a>
-        <a href="https://www.youtube.com/@WolrdTime" target="_blank">
-            <img src="youtube.png" alt="YouTube">
-        </a>
-    </div>
-     //*<h1>WORLD TIME</h1>
-    <h5> V0.0001</h5>
+    
+    
 
-  
+
 
     <div class="category-buttons">
-        <button onclick="showCategory('juegos')">Juegos</button>
-        <button onclick="showCategory('sistemas')">Sistemas</button>
+        <button  onclick="showCategory('actualizaciones')">actualizaciones</button>
+        <button  onclick="showCategory('juegos')">Juegos</button>
+        <button  onclick="showCategory('Programas')">Programas</button>
+        <button  onclick="showCategory('sistemas')">Sistemas</button>
     </div>
 
     <div class="category" id="juegos">
         <h2>Juegos</h2>
-        <div class="item">
+        <div id="juegos" class="item">
             <span>Call of duty ( 2003 )</span>
             <button class="download-button" onclick="openLink('https://exe.io/4vfti2')">Descargar</button>
             <button class="key-button" onclick="openLink('https://exe.io/iwIN3')">Clave</button>
@@ -45,51 +50,43 @@
         </div>
     </div>
 
+    <div class="category" id="Programas">
+        <h2>Programas</h2>
+        <div class="item">
+<span>-</span>
+           <button class="download-button" onclick="openLink('')">Descargar</button>
+            <button class="key-button" onclick="openLink('')">Clave</button>
+            
+            
+ </div>
 
+</div>
     <div class="category" id="sistemas">
         <h2>Sistemas</h2>
         <div class="item">
             <span>TomexOS v2</span>
             <button class="download-button" onclick="openLink('https://ouo.io/H3JMvCz')">Descargar</button>
     </div>
+</div>
+
+</div>
+<div  class="category" id="actualizaciones">
+    <h2>actualizaciones</h2>
+    <div class="item">
+        <span>actualizaciones V0.0002</span>
+        <button id="actualizaciones" onclick="abrirVentana()">Ver</button>
+        
+</div>
+</div>
+
+
+
 
     <script src="script.js"></script>
-         <style>
-        html, body {
-            background-size: 100% 100%; /* Ajusta la imagen al tamaño completo de la ventana */
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            transition: background-image 1s ease-in-out; /* Transición suave */
-        }
-    </style>
+
+
 </head>
-<body>
 
-<script>
-    // Lista de fondos disponibles
-    const backgrounds = [
-        "fondo1.JPG",
-        "fondo2.JPG",
-        "fondo3.JPG",
-        "fondo4.JPG",
-        "fondo5.JPG",
-        "fondo6.JPG"
-    ];
 
-    function cambiarFondo() {
-        const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-        document.body.style.backgroundImage = `url('${randomBackground}')`;
-        console.log("Fondo cambiado a:", randomBackground); // Debug en consola
-    }
-
-    // Cambiar fondo cada 3 segundos
-    cambiarFondo(); // Cambia el fondo al cargar la página
-    setInterval(cambiarFondo, 3000);
-</script>
 </body>
 </html>
