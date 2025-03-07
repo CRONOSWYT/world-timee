@@ -3,29 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Políticas y Condiciones de Uso</title>
+    <title>WORLD TIME - Categorías</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        h2 {
-            color: #007bff;
-            text-align: center;
-        }
         .modal {
             display: none;
             position: fixed;
@@ -34,101 +13,88 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
         .modal-content {
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             text-align: center;
-            max-width: 600px;
-            overflow-y: auto;
-            max-height: 80vh;
         }
-        .modal button {
-            margin-top: 15px;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
+        .close-modal {
+            float: right;
+            font-size: 20px;
             cursor: pointer;
+            color: black;
+            font-weight: bold;
+        }
+        .close-modal:hover {
+            color: red;
         }
     </style>
-    <script>
-        function abrirModal() {
-            if (!localStorage.getItem("ocultarModal")) {
-                document.getElementById("modal").style.display = "flex";
-            }
-        }
-        function cerrarModal() {
-            document.getElementById("modal").style.display = "none";
-        }
-        function noMostrarDeNuevo() {
-            localStorage.setItem("ocultarModal", "true");
-            cerrarModal();
-        }
-        window.onload = abrirModal;
-    </script>
 </head>
 <body>
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <h2>🌍 POLÍTICAS Y CONDICIONES DE USO – WORLD TIME 🚀</h2>
-            <p><strong>1️⃣ BIENVENIDO A WORLD TIME</strong></p>
-            <p>¡Hola! 👋 En <strong>World Time</strong> ofrecemos <strong>programas y juegos gratuitos</strong> 🕹️📂, <strong>libres de virus</strong> y con <strong>tutoriales detallados</strong> para que los instales sin complicaciones.</p>
-            <p>Al usar nuestro sitio, <strong>aceptas estas condiciones</strong>. Si no estás de acuerdo, te recomendamos no continuar.</p>
-            <p><strong>2️⃣ POLÍTICA DE PRIVACIDAD 🔒</strong></p>
-            <ul>
-                <li>📌 <strong>¿Qué datos recopilamos?</strong></li>
-                <li>🔹 Información proporcionada al comentar o registrarte.</li>
-                <li>🔹 Datos de navegación como IP y tipo de dispositivo.</li>
-                <li>🔹 Cookies para mejorar tu experiencia.</li>
-            </ul>
-            <ul>
-                <li>📌 <strong>¿Cómo usamos tu información?</strong></li>
-                <li>✅ Para mejorar nuestro sitio y personalizar contenido.</li>
-                <li>✅ Para mostrar anuncios mediante redes publicitarias.</li>
-                <li>✅ Para garantizar seguridad y evitar fraudes.</li>
-            </ul>
-            <p>📌 <strong>Cookies y Publicidad 🛑</strong></p>
-            <p>Usamos cookies para mostrar anuncios relevantes 🎯.</p>
-            <ul>
-                <li>🔸 <strong>Google AdSense</strong> y otras redes pueden usarlas para personalizar publicidad.</li>
-                <li>🔸 Puedes desactivarlas en la configuración de tu navegador o en <a href="https://www.youradchoices.com/">YourAdChoices</a>.</li>
-            </ul>
-            <p><strong>3️⃣ POLÍTICA DE DESCARGAS 📥</strong></p>
-            <ul>
-                <li>🔰 <strong>Nuestros archivos son:</strong></li>
-                <li>✅ <strong>99% funcionales y libres de virus</strong> 🛡️.</li>
-                <li>✅ Probados y revisados antes de publicarse.</li>
-                <li>✅ Acompañados de <strong>tutoriales creados por Team Time</strong> 🎥.</li>
-            </ul>
-            <p>⚠️ <strong>No nos hacemos responsables</strong> de daños en tu PC o pérdida de datos al instalar el software.</p>
-            <p><strong>4️⃣ TÉRMINOS DE USO 📜</strong></p>
-            <ul>
-                <li>✅ <strong>Lo que puedes hacer:</strong></li>
-                <li>✔️ Usar el contenido del sitio para tu beneficio personal.</li>
-                <li>✔️ Descargar y probar los programas con responsabilidad.</li>
-                <li>✔️ Compartir el contenido con créditos a <strong>World Time</strong>.</li>
-            </ul>
-            <ul>
-                <li>❌ <strong>Lo que NO puedes hacer:</strong></li>
-                <li>🚫 Distribuir software ilegal o con derechos de autor sin permiso.</li>
-                <li>🚫 Manipular anuncios de forma artificial (clics falsos, bots, etc.).</li>
-                <li>🚫 Usar los archivos con fines maliciosos.</li>
-            </ul>
-            <p>📌 <strong>Sobre enlaces externos 🔗</strong></p>
-            <p>Algunas descargas pueden provenir de <strong>sitios de terceros</strong>. No nos hacemos responsables de cambios en los enlaces o archivos.</p>
-            <p><strong>5️⃣ MODIFICACIONES Y CONTACTO ✉️</strong></p>
-            <p>Nos reservamos el derecho de <strong>actualizar estas políticas</strong> en cualquier momento. Te recomendamos revisarlas con frecuencia.</p>
-            <p>📧 <strong>Contacto:</strong> timewolrd3@gmail.com</p>
-            <p>💬 <strong>Discord:</strong> <a href="https://discord.gg/AkGsvJhnJF">Únete aquí</a></p>
-            <button onclick="cerrarModal()">Aceptar</button>
-            <button onclick="noMostrarDeNuevo()">No volver a mostrar</button>
+    <div class="category-buttons">
+        <button onclick="showCategory('juegos')">Juegos</button>
+    </div>
+
+    <div id="juegos" class="category">
+        <h2>Juegos</h2>
+        <div class="item">
+            <span>Call of Duty 1</span>
+            <button onclick="mostrarModal('modal-cod1')">Detalles</button>
+        </div>
+        <div class="item">
+            <span>Grand Theft Auto V</span>
+            <button onclick="mostrarModal('modal-gta5')">Detalles</button>
+        </div>
+        <div class="item">
+            <span>Counter-Strike 1.6</span>
+            <button onclick="mostrarModal('modal-cs16')">Detalles</button>
         </div>
     </div>
+
+    <div id="modal-cod1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal('modal-cod1')">&times;</span>
+            <h2>🔹 Call of Duty 1</h2>
+            <p>El legendario shooter en su versión optimizada.</p>
+            <button onclick="openLink('https://ouo.io/cod1')">Descargar</button>
+        </div>
+    </div>
+
+    <div id="modal-gta5" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal('modal-gta5')">&times;</span>
+            <h2>🔹 Grand Theft Auto V</h2>
+            <p>Uno de los juegos de mundo abierto más populares.</p>
+            <button onclick="openLink('https://ouo.io/gta5')">Descargar</button>
+        </div>
+    </div>
+
+    <div id="modal-cs16" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal('modal-cs16')">&times;</span>
+            <h2>🔹 Counter-Strike 1.6</h2>
+            <p>Un clásico de los juegos de disparos en línea.</p>
+            <button onclick="openLink('https://ouo.io/cs16')">Descargar</button>
+        </div>
+    </div>
+
+    <script>
+        function showCategory(categoryId) {
+            document.getElementById(categoryId).style.display = 'block';
+        }
+        function mostrarModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+        function cerrarModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        function openLink(url) {
+            window.open(url, "_blank");
+        }
+    </script>
 </body>
 </html>
