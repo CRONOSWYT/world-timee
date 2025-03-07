@@ -1,11 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
+    <link rel="icon" type="image" href="OIG3.guBKCyf0YPEMDVO-transformed.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORLD TIME - Categorías</title>
-    <style>
-        .modal {
+    <title>WORLD TIME</title>
+   <div class="social-icons">
+    <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbTZmZmdZY3p6WG4tOERSSUpSeXA1c2ZLZEhhd3xBQ3Jtc0tuMnBlN05odURiMUcxN2hRLUpwZlRUdVgzMFVQYXdFbEhyaFlQV0NlSUFFbEpqMmxLR0dBa1h3UnVOaTI2YzdDSHZLYzJDdWhYNkdLR0VyamdsZU1pSGNzeEJXS3d2dWNKVGVvWXJnY2Y0T2xqNWxLaw&q=https%3A%2F%2Fdiscord.gg%2FAkGsvJhnJF" target="_blank">
+        <img src="discord.png" alt="Discord">
+    </a>
+    <a href="https://www.youtube.com/@tu-canal" target="_blank">
+        <img src="youtube.png" alt="YouTube">
+    </a>
+</div>
+<h1>WORLD TIME </h1>
+<h5>V0.0002.004</h5>
+<style>
+    html, body {
+color: #c9d1d9;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+h1 {
+color: #00bfff;
+}
+
+
+.category-buttons button{
+padding: 10px;
+margin: 5px;
+background-color: #161b226e;
+border: 1px solid #30363d;
+color: white;
+cursor: pointer;
+width: 150px;
+display: inline-block;
+}
+
+.category-buttons button:hover{
+background-color: #00bfff83;
+}
+
+.category {
+display: none;
+margin-top: 20px;
+padding: 15px;
+border-radius: 8px;
+background-color: #161b226e;
+width: 50%;
+margin: auto;
+box-shadow: 0 0 10px #00bfff;
+}
+
+.category h2 {
+color: #00bfff;
+text-align: left;
+padding-left: 10px;
+}
+
+.item{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #21262d6b;
+margin: 5px;
+padding: 10px;
+border-radius: 5px;
+}
+
+.item span {
+flex-grow: 1;
+text-align: left;
+padding-left: 10px;
+}
+
+.download-button, .key-button,.button [id="actualizaciones"] {
+padding: 5px 10px;
+margin-left: 10px;
+background-color: #30363d75;
+border: none;
+color: white;
+cursor: pointer;
+}
+
+.download-button:hover,.button [id="actualizaciones"] {
+background-color: #00bfff7e;
+}
+
+.key-button:hover {
+background-color: #ff44006c;
+}
+
+.social-icons {
+position: fixed;
+right: 20px;   /* Distancia desde la derecha */
+display: flex;
+gap: 10px;
+background: rgba(0, 0, 0, 0);  /* Fondo semi-transparente */
+padding: 10px;
+border-radius: 10px;
+}
+
+.social-icons a img {
+width: 35px;
+height: 35px;
+transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+transform: scale(1.2);
+}
+
+button[id="actualizaciones"]{
+padding: 10px;
+margin: 5px;
+background-color: #161b226e;
+border: 1px solid #30363d;
+color: white;
+cursor: pointer;
+width: 150px;
+display: inline-block;
+}
+
+html, body {
+background-image: url(fondo3.JPG);
+background-size: 100% 100%; /* Ajusta la imagen al tamaño completo de la ventana */
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.category-buttons, button [id="juegos"], button [id="Programas"], button [id="Sistemas"]{
+margin-right: 100%;
+margin-top: -8%;
+}
+
+body[id="2"] {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #007bff;
+    }
+    ul {
+        text-align: left;
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin: 10px 0;
+    }
+    /* Estilos para el modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.664);
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-content {
+        background: rgba(0, 0, 0, 0.582);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        max-width: 400px;
+    }
+    .modal button, .open-modal {
+        margin-top: 15px;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2 {
+            color: #007bff;
+            text-align: center;
+        }
+        .modal-policy {
             display: none;
             position: fixed;
             top: 0;
@@ -13,54 +227,352 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
             align-items: center;
+            justify-content: center;
         }
-        .modal-content {
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2 {
+            color: #007bff;
             text-align: center;
+        }
+        .modal-policy {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background: rgba(0, 0, 0, 0.774);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            overflow-y: auto;
+            max-height: 80vh;
+            position: relative;
+        }
+        .modal-policy button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .modal-policy button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
         .close-modal {
             float: right;
             font-size: 20px;
             cursor: pointer;
-            color: black;
+            color: white;
             font-weight: bold;
         }
+
         .close-modal:hover {
             color: red;
         }
-    </style>
+</style>
+
+<script>  
+    function showCategory(category) {
+    document.querySelectorAll('.category').forEach(cat => {
+        cat.style.display = 'none';
+    });
+
+    document.getElementById(category).style.display = 'block';
+}
+
+function openLink(url) {
+    window.open(url, '_blank');
+}
+
+  /*  // Lista de fondos disponibles
+    const backgrounds = [
+        "fondo1.jpg",
+        "fondo2.jpg",
+        "fondo3.jpg",
+        "fondo4.jpg",
+        "fondo5.jpg",
+        "fondo6.jpg"
+    ];
+
+    function cambiarFondo() {
+        const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+        document.body.style.backgroundImage = `url('${randomBackground}')`;
+        console.log("Fondo cambiado a:", randomBackground); // Debug en consola
+    }
+
+    // Cambiar fondo cada 3 segundos
+    cambiarFondo(); // Cambia el fondo al cargar la página
+    setInterval(cambiarFondo, 3000);
+*/
+
+
+function abrirModal() {
+    document.getElementById("modal").style.display = "flex";
+}
+function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.querySelector("#modal-policy");
+
+            if (modal && !localStorage.getItem("ocultarModal")) {
+                modal.style.display = "flex";
+            }
+
+            document.querySelectorAll(".cerrar-modal").forEach(boton => {
+                boton.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+            });
+
+            document.querySelector("#no-mostrar").addEventListener("click", function () {
+                localStorage.setItem("ocultarModal", "true");
+                modal.style.display = "none";
+            });
+        });
+        function showCategory(categoryId) {
+            let categories = document.querySelectorAll('.category');
+            categories.forEach(category => {
+                category.style.display = 'none';
+            });
+            document.getElementById(categoryId).style.display = 'block';
+        }
+
+        function mostrarModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+
+        function cerrarModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        function verContraseña(nombre) {
+            let contraseñas = {
+                "CallOfDuty": "COD1-KEY",
+                "OptiTime": "OPTI-PRO",
+                "TomexOS": "1234-TOMEX"
+            };
+            alert("La contraseña es: " + contraseñas[nombre]);
+        }
+
+        function openLink(url) {
+            window.open(url, "_blank");
+        }
+</script> 
+
 </head>
 <body>
-    <div class="category-buttons">
-        <button onclick="showCategory('juegos')">Juegos</button>
+
+    <div class="modal-policy" id="modal-policy">
+        <div class="modal-content">
+            <h2>🌍 POLÍTICAS Y CONDICIONES DE USO – WORLD TIME 🚀</h2>
+            <p><strong>1️⃣ BIENVENIDO A WORLD TIME</strong></p>
+            <p>¡Hola! 👋 En <strong>World Time</strong> ofrecemos <strong>programas y juegos gratuitos</strong> 🕹️📂, <strong>libres de virus</strong> y con <strong>tutoriales detallados</strong> para que los instales sin complicaciones.</p>
+            <p>Al usar nuestro sitio, <strong>aceptas estas condiciones</strong>. Si no estás de acuerdo, te recomendamos no continuar.</p>
+
+            <p><strong>2️⃣ POLÍTICA DE PRIVACIDAD 🔒</strong></p>
+            <ul>
+                <li>📌 <strong>¿Qué datos recopilamos?</strong></li>
+                <li>🔹 Información proporcionada al comentar o registrarte.</li>
+                <li>🔹 Datos de navegación como IP y tipo de dispositivo.</li>
+                <li>🔹 Cookies para mejorar tu experiencia.</li>
+            </ul>
+            <ul>
+                <li>📌 <strong>¿Cómo usamos tu información?</strong></li>
+                <li>✅ Para mejorar nuestro sitio y personalizar contenido.</li>
+                <li>✅ Para mostrar anuncios mediante redes publicitarias.</li>
+                <li>✅ Para garantizar seguridad y evitar fraudes.</li>
+            </ul>
+            <p>📌 <strong>Cookies y Publicidad 🛑</strong></p>
+            <p>Usamos cookies para mostrar anuncios relevantes 🎯.</p>
+            <ul>
+                <li>🔸 <strong>Google AdSense</strong> y otras redes pueden usarlas para personalizar publicidad.</li>
+                <li>🔸 Puedes desactivarlas en la configuración de tu navegador o en <a href="https://www.youradchoices.com/">YourAdChoices</a>.</li>
+            </ul>
+
+            <p><strong>3️⃣ POLÍTICA DE DESCARGAS 📥</strong></p>
+            <ul>
+                <li>🔰 <strong>Nuestros archivos son:</strong></li>
+                <li>✅ <strong>99% funcionales y libres de virus</strong> 🛡️.</li>
+                <li>✅ Probados y revisados antes de publicarse.</li>
+                <li>✅ Acompañados de <strong>tutoriales creados por Team Time</strong> 🎥.</li>
+            </ul>
+            <p>⚠️ <strong>No nos hacemos responsables</strong> de daños en tu PC o pérdida de datos al instalar el software.</p>
+
+            <p><strong>4️⃣ TÉRMINOS DE USO 📜</strong></p>
+            <ul>
+                <li>✅ <strong>Lo que puedes hacer:</strong></li>
+                <li>✔️ Usar el contenido del sitio para tu beneficio personal.</li>
+                <li>✔️ Descargar y probar los programas con responsabilidad.</li>
+                <li>✔️ Compartir el contenido con créditos a <strong>World Time</strong>.</li>
+            </ul>
+            <ul>
+                <li>❌ <strong>Lo que NO puedes hacer:</strong></li>
+                <li>🚫 Distribuir software ilegal o con derechos de autor sin permiso.</li>
+                <li>🚫 Manipular anuncios de forma artificial (clics falsos, bots, etc.).</li>
+                <li>🚫 Usar los archivos con fines maliciosos.</li>
+            </ul>
+            <p>📌 <strong>Sobre enlaces externos 🔗</strong></p>
+            <p>Algunas descargas pueden provenir de <strong>sitios de terceros</strong>. No nos hacemos responsables de cambios en los enlaces o archivos.</p>
+
+            <p><strong>5️⃣ MODIFICACIONES Y CONTACTO ✉️</strong></p>
+            <p>Nos reservamos el derecho de <strong>actualizar estas políticas</strong> en cualquier momento. Te recomendamos revisarlas con frecuencia.</p>
+            <p>📧 <strong>Contacto:</strong> timewolrd3@gmail.com</p>
+            <p>💬 <strong>Discord:</strong> <a href="https://discord.gg/AkGsvJhnJF">Únete aquí</a></p>
+
+            <button class="cerrar-modal">Aceptar</button>
+            <button id="no-mostrar">No volver a mostrar</button>
+        </div>
     </div>
+
+
+    <div class="category-buttons">
+        <button  onclick="showCategory('actualizaciones')">actualizaciones</button>
+        <button  onclick="showCategory('juegos')">Juegos</button>
+        <button  onclick="showCategory('Programas')">Programas</button>
+        <button  onclick="showCategory('sistemas')">Sistemas</button>
+    </div>
+
+
+
+    <div class="category" id="Programas">
+        <h2>Programas</h2>
+        <div class="item">
+<span>-</span>
+           <button class="download-button" onclick="openLink('')">Descargar</button>
+            <button class="key-button" onclick="openLink('')">Clave</button>
+            
+            
+ </div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+    <body id="2">
+        <div  class="category" id="actualizaciones">
+            <button class="open-modal" onclick="abrirModal()">Ver Actualización V0.0002.004 </button>
+            
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <h2>Actualización V0.0002.004</h2>
+                    <ul>
+                        <li>✅ Se cambió el fondo de la página.</li>
+                        <li>✅ Se reorganizaron los botones de categorías en la parte superior.</li>
+                        <li>✅ Se añadió un botón de <strong>Actualizaciones</strong> para revisar los cambios.</li>
+                        <li>⚠️ Se eliminó temporalmente la barra de búsqueda (volverá en futuras actualizaciones).</li>
+                        <li>✅ Se agregó el botón <strong>Programas</strong> (aún sin contenido, pero se añadirá más adelante).</li>
+                    </ul>
+                    <button onclick="cerrarModal()">Aceptar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+         <!-- 🕹️ Categoría: Juegos -->
 
     <div id="juegos" class="category">
         <h2>Juegos</h2>
         <div class="item">
-            <span>Call of Duty 1</span>
-            <button onclick="mostrarModal('modal-cod1')">Detalles</button>
+            <span>Call of duty ( 2003 )</span>
+            <button onclick="mostrarModal('modal-cod1')">Ver</button>
         </div>
         <div class="item">
             <span>Grand Theft Auto V</span>
-            <button onclick="mostrarModal('modal-gta5')">Detalles</button>
+            <button onclick="mostrarModal('modal-gta5')">Ver</button>
         </div>
         <div class="item">
             <span>Counter-Strike 1.6</span>
-            <button onclick="mostrarModal('modal-cs16')">Detalles</button>
+            <button onclick="mostrarModal('modal-cs16')">Ver</button>
         </div>
     </div>
+
+    <!-- 📦 Categoría: Programas -->
+    <div id="programas" class="category">
+        <h2>Programas</h2>
+        <div class="item">
+            <span>OptiTime Pro</span>
+            <button class="download-button" onclick="mostrarModal('modal-programas')">Ver</button>
+        </div>
+    </div>
+
+    <!-- 🖥️ Categoría: Sistemas -->
+    <div id="sistemas" class="category">
+        <h2>Sistemas</h2>
+        <div class="item">
+            <span>TomexOS v2</span>
+            <button class="download-button" onclick="mostrarModal('modal-sistemas')">Ver</button>
+        </div>
+    </div>
+
+    <!-- 🎮 Modal para "Juegos" -->
+
 
     <div id="modal-cod1" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="cerrarModal('modal-cod1')">&times;</span>
-            <h2>🔹 Call of Duty 1</h2>
-            <p>El legendario shooter en su versión optimizada.</p>
-            <button onclick="openLink('https://ouo.io/cod1')">Descargar</button>
+                    <h1>Call of Duty (2003)</h1>
+                    
+                    <h2>Información del Juego</h2>
+                    <p>Call of Duty es un juego de disparos en primera persona ambientado en la Segunda Guerra Mundial. Fue lanzado el <strong>29 de Octubre de 2003</strong> para PC, publicado por <strong>Activision</strong> y desarrollado por <strong>Infinity Ward</strong>. Fue la primera entrega de la saga, pero no se comercializó ampliamente hasta la salida de <strong>Call of Duty Classics</strong>.</p>
+                    
+                    <div class="highlight">
+                        <p><strong>Arquitectura:</strong> 64 Bits</p>
+                        <p><strong>Peso:</strong> 1.15GB</p>
+                    </div>
+            
+                    <h2>Dependencias Necesarias</h2>
+                    <p>Si no tienes instalados <strong>Visual C++</strong>, <strong>.NET Framework</strong> y <strong>DirectX</strong>, descárgalos aquí:</p>
+                    <p><a href="https://www.mediafire.com/file/2bjxzf59duumsr5/" target="_blank">Descargar Dependencias</a></p>
+                    
+                    <h2>¿Necesitas ayuda?</h2>
+                    <p>Si no puedes o no entiendes cómo descargar el juego, puedes dirigirte al canal de soporte en Discord o contactar con:</p>
+                    <p><strong>Canal de Ayuda:</strong> <span style="color:#00aced">#﹒👥﹒ayuda-comunitaria  </span></p>
+                    <p><strong>Contacto:</strong> <span style="color:#00aced"> @cronoswyt/sr of time</span> | <span style="color:#00aced">@Veil</span></p>
+                    
+                    <p><em>Hecho por Equipo Team</em></p>
+            <button onclick="openLink('https://exe.io/4vfti2')">Descargar</button>
+            <button onclick="openLink('https://exe.io/iwIN3')">Contraseña</button>
         </div>
     </div>
 
@@ -82,19 +594,38 @@
         </div>
     </div>
 
-    <script>
-        function showCategory(categoryId) {
-            document.getElementById(categoryId).style.display = 'block';
-        }
-        function mostrarModal(id) {
-            document.getElementById(id).style.display = "flex";
-        }
-        function cerrarModal(id) {
-            document.getElementById(id).style.display = "none";
-        }
-        function openLink(url) {
-            window.open(url, "_blank");
-        }
-    </script>
+
+    <!-- 📦 Modal para "Programas" -->
+    <div id="modal-programas" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal('modal-programas')">&times;</span>
+            <h2 class="modal-title">🔹 Información de OptiTime Pro</h2>
+            <p>Una herramienta avanzada de optimización para Windows.</p>
+
+            <div class="modal-buttons">
+                <button class="password-button" onclick="verContraseña('OptiTime')">Contraseña</button>
+                <button class="download-button" onclick="openLink('https://ouo.io/optitime')">Descargar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🖥️ Modal para "Sistemas" -->
+    <div id="modal-sistemas" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal('modal-sistemas')">&times;</span>
+            <h2 class="modal-title">🔹 Información de TomexOS v2</h2>
+            <p>Un sistema operativo ligero y optimizado.</p>
+
+            <div class="modal-buttons">
+                <button class="password-button" onclick="verContraseña('TomexOS')">Contraseña</button>
+                <button class="download-button" onclick="openLink('https://ouo.io/H3JMvCz')">Descargar</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</head>
+
+
+
 </body>
 </html>
